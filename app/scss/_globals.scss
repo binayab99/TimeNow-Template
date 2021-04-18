@@ -1,0 +1,59 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: $gray;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: $darkBlue;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.logo {
+  img {
+    width: 24px;
+    height: 22px;
+  }
+}
+
+.menu {
+  span {
+    margin-right: 22px;
+  }
+}
+
+.schedule {
+  width: 196px;
+  height: 63px;
+  font-weight: bold;
+  text-align: center;
+  background-color: $darkBlue;
+  line-height: 63px;
+  border-radius: 10px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
