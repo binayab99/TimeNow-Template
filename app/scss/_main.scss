@@ -1,22 +1,29 @@
-.hero {
-  .navbar {
-    position: relative;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 74px 3fr 196px;
-    grid-template-areas: "logo menu schedule";
-    width: 1140px;
-    height: 63px;
-    align-items: center;
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 74px 3fr 196px;
+  grid-template-areas: "logo menu schedule";
+  width: 1140px;
+  height: 63px;
+  align-items: center;
 
-    .logo {
-      grid-area: logo;
-    }
-    .menu {
-      grid-area: menu;
-    }
-    .schedule {
-      grid-area: schedule;
-    }
+  .logo {
+    grid-area: logo;
+  }
+  .menu {
+    grid-area: menu;
+  }
+  .schedule {
+    grid-area: schedule;
+  }
+}
+
+.hero {
+  display: flex;
+  &-left {
+  }
+
+  &-right {
   }
 }
