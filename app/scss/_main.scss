@@ -1,9 +1,22 @@
+.container-head {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 50vw;
+  height: 65vh;
+  background-color: $backgroundCyan;
+}
+
 .navbar {
   position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: 74px 3fr 196px;
   grid-template-areas: "logo menu schedule";
+  margin-top: 40px;
+  margin-left: 150px;
   width: 1140px;
   height: 63px;
   align-items: center;
@@ -11,7 +24,7 @@
   .logo {
     grid-area: logo;
   }
-  .menu {
+  .me4nu {
     grid-area: menu;
   }
   .schedule {
@@ -25,5 +38,8 @@
   }
 
   &-right {
+    img {
+      max-width: 601px;
+    }
   }
 }
