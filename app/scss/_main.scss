@@ -5,41 +5,151 @@
   right: 0;
   content: "";
   width: 50vw;
-  height: 65vh;
+  height: 780px;
   background-color: $backgroundCyan;
 }
 
 .navbar {
   position: relative;
   z-index: 2;
-  display: grid;
-  grid-template-columns: 74px 3fr 196px;
-  grid-template-areas: "logo menu schedule";
-  margin-top: 40px;
-  margin-left: 150px;
-  width: 1140px;
-  height: 63px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 3rem 8rem;
+  gap: 3rem;
 
-  .logo {
-    grid-area: logo;
-  }
-  .me4nu {
-    grid-area: menu;
-  }
-  .schedule {
-    grid-area: schedule;
+  .menu {
+    margin-right: auto;
+    display: flex;
+    gap: 1.5rem;
   }
 }
 
 .hero {
   display: flex;
+
   &-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8rem;
+
+    h1 {
+      max-width: 30rem;
+    }
+
+    p {
+      max-width: 30rem;
+    }
+
+    .buttons {
+      margin: 1rem 0 1rem 0;
+
+      .demo {
+        font-weight: bold;
+        text-align: center;
+        background-color: inherit;
+        color: $darkBlue;
+        padding: 1.2rem 1.5rem;
+        border-radius: 5px;
+      }
+    }
+
+    .learn-more {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .shield {
+        width: 18px;
+        height: 24px;
+        background: url("/Assets/Shield.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      a {
+        font-weight: bold;
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
   }
 
   &-right {
+    flex: 1;
+    text-align: center;
+
     img {
-      max-width: 601px;
+      max-width: 600px;
+      margin-left: auto;
+    }
+  }
+}
+
+.social-proof {
+  display: flex;
+  padding: 12rem 8rem 3rem 8rem;
+
+  &-left {
+    flex: 1;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .people-container {
+      display: flex;
+      gap: 1rem;
+
+      .people {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8rem;
+
+    p {
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.features {
+  display: flex;
+  gap: 11rem;
+  background-color: $backgroundLightCyan;
+  padding: 4rem 8rem 6rem 8rem;
+
+  &-left {
+    flex: 1;
+  }
+
+  &-right {
+    flex: 1;
+
+    a {
+      font-weight: bold;
     }
   }
 }

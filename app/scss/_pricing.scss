@@ -1,0 +1,71 @@
+#highlight {
+  font-weight: bold;
+}
+
+.toggle {
+  padding: 3rem 8rem;
+  text-align: center;
+
+  p {
+    margin: 1rem auto;
+    max-width: 46rem;
+  }
+
+  .container-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    span {
+      &:first-of-type {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.plans {
+  padding: 3rem 8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    padding: 2rem;
+    flex-basis: 353px;
+    // min-height: 20rem;
+
+    span {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    p {
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid gray;
+    }
+
+    .fa-check-circle {
+      color: rgb(70, 195, 135);
+      padding-right: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .subscribe {
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      background-color: $darkBlue;
+      color: white;
+      border-radius: 5px;
+      padding: 1rem 0;
+    }
+  }
+}

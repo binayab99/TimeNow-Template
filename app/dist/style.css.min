@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #425466;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: #1d1b67;
+  margin: 0;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.logo img {
+  width: 24px;
+  height: 22px;
+}
+
+.menu span {
+  margin-right: 22px;
+}
+
+.schedule {
+  font-weight: bold;
+  text-align: center;
+  background-color: #1d1b67;
+  color: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  border: 1px solid #425466;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+form input {
+  height: 3rem;
+  border: 0;
+  font-size: 1rem;
+}
+form input[type=email] {
+  padding-left: 1rem;
+}
+form input[type=email]:focus {
+  outline: none;
+}
+form input[type=submit] {
+  background-color: #1d1b67;
+  color: white;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+}
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+footer {
+  padding: 3rem 8rem;
+}
+footer .logo img {
+  width: 24px;
+  height: 22px;
+}
+footer .container-cols {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container-cols .col {
+  display: flex;
+  flex-direction: column;
+}
+footer .container-cols .col-1 {
+  flex: 1;
+}
+footer .container-cols .col-2 {
+  flex: 1;
+}
+footer .container-cols .col-3 {
+  flex: 1;
+}
+footer .container-cols .col-4 {
+  flex: 3;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container-head {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 50vw;
+  height: 780px;
+  background-color: #46ccde;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 8rem;
+  gap: 3rem;
+}
+.navbar .menu {
+  margin-right: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero {
+  display: flex;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8rem;
+}
+.hero-left h1 {
+  max-width: 30rem;
+}
+.hero-left p {
+  max-width: 30rem;
+}
+.hero-left .buttons {
+  margin: 1rem 0 1rem 0;
+}
+.hero-left .buttons .demo {
+  font-weight: bold;
+  text-align: center;
+  background-color: inherit;
+  color: #1d1b67;
+  padding: 1.2rem 1.5rem;
+  border-radius: 5px;
+}
+.hero-left .learn-more {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.hero-left .learn-more .shield {
+  width: 18px;
+  height: 24px;
+  background: url("/Assets/Shield.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-left .learn-more a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: underline;
+}
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
+.hero-right img {
+  max-width: 600px;
+  margin-left: auto;
+}
+
+.social-proof {
+  display: flex;
+  padding: 12rem 8rem 3rem 8rem;
+}
+.social-proof-left {
+  flex: 1;
+}
+.social-proof-left h2 {
+  margin-bottom: 1rem;
+}
+.social-proof-left .people-container {
+  display: flex;
+  gap: 1rem;
+}
+.social-proof-left .people-container .people {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.social-proof-left .people-container .people img {
+  width: 100%;
+}
+.social-proof-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 8rem;
+}
+.social-proof-right p:first-of-type {
+  margin-top: 0;
+}
+.social-proof-right p:last-of-type {
+  margin-bottom: 0;
+}
+
+.features {
+  display: flex;
+  gap: 11rem;
+  background-color: #cdf9ff;
+  padding: 4rem 8rem 6rem 8rem;
+}
+.features-left {
+  flex: 1;
+}
+.features-right {
+  flex: 1;
+}
+.features-right a {
+  font-weight: bold;
+}
+
+#highlight {
+  font-weight: bold;
+}
+
+.toggle {
+  padding: 3rem 8rem;
+  text-align: center;
+}
+.toggle p {
+  margin: 1rem auto;
+  max-width: 46rem;
+}
+
+.plans {
+  padding: 3rem 8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.plans .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #425466;
+  border-radius: 5px;
+  padding: 2rem;
+  flex-basis: 353px;
+}
+.plans .card span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.plans .card p {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid gray;
+}
+.plans .card .subscribe {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1d1b67;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=style.css.min.map */

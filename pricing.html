@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script
+      src="https://kit.fontawesome.com/52d03c6e13.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Pricing</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Assets/Logo.svg" alt="logo" />
+      </div>
+      <div class="menu">
+        <a href="index.html">Features</a>
+        <a id="highlight" href="#">Pricing</a>
+      </div>
+      <a class="schedule" href="#">Start Scheduling</a>
+    </nav>
+
+    <section class="toggle">
+      <h1>Flexible Plans for Everyone.</h1>
+      <p>
+        Our plans are made for everyone. Whether you're just starting out on
+        social media, or have been on there for a long time, we have a plan
+        that's right for you.
+      </p>
+      <div class="container-switch">
+        <span>Billed Monthly</span>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span>Billed Yearly</span>
+      </div>
+    </section>
+
+    <section class="plans">
+      <div class="card left">
+        <h2>$4<span>/mo</span></h2>
+        <p>Perfect plan if you're just starting out.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i>LinkedIn Integration</li>
+          <li><i class="fas fa-check-circle"></i>Twitter Integration</li>
+          <li><i class="fas fa-check-circle"></i>Real-time Analytics</li>
+        </ul>
+        <a class="subscribe" href="#">Subscribe Now</a>
+      </div>
+      <div class="card middle">
+        <h2>$12<span>/mo</span></h2>
+        <p>Perfect plan if you're a heavy user of social media.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i>LinkedIn Integration</li>
+          <li><i class="fas fa-check-circle"></i>Twitter Integration</li>
+          <li><i class="fas fa-check-circle"></i>Instagram Integration</li>
+          <li><i class="fas fa-check-circle"></i>Real-time Analytics</li>
+        </ul>
+        <a class="subscribe" href="#">Subscribe Now</a>
+      </div>
+      <div class="card right">
+        <h2>$7<span>/mo</span></h2>
+        <p>Perfect plan if you're just starting out.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i>LinkedIn Integration</li>
+          <li><i class="fas fa-check-circle"></i>Twitter Integration</li>
+        </ul>
+        <a class="subscribe" href="#">Subscribe Now</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo">
+        <img src="Assets/Logo.svg" alt="" />
+      </div>
+      <div class="container-cols">
+        <div class="col col-1">
+          <h3>Product</h3>
+          <a href="#">Homepage</a>
+          <a href="#">Pricing</a>
+          <a href="#">Features</a>
+        </div>
+        <div class="col col-2">
+          <h3>Help</h3>
+          <a href="#">Live Chat</a>
+          <a href="#">Send Email</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="col col-3">
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Customers</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="col col-4">
+          <div>
+            <h3>Try TweetNow</h3>
+            <form>
+              <input type="email" placeholder="Enter email address" required />
+              <input type="submit" value="Start Scheduling" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
